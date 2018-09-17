@@ -1,7 +1,7 @@
 ---
 title: Raise Green
 subtitle: Crowdfunding small investments for democratized renewable energy ownership
-image: /img/solarpanels.jpg
+image: 
 blurb:
   heading: About
   text: >+
