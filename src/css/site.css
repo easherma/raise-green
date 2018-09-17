@@ -223,25 +223,25 @@
 	}
 
 	.team-card {
-	overflow: hidden;
+	overflow: auto;
 	}
 
-	.bio {
+	/* .bio {
 	    display: none;
 			max-height: 0px;
 			height: 0px;
-	}
+	} */
 
-	.team-card:hover .bio {
+	/* .team-card:hover .bio {
 	    display: inherit;
 			height: auto;
 			width:auto;
 			max-height: 250px;
-	}
+	} */
 
-	.team-card:hover .roles {
+	/* .team-card:hover .roles {
 	    display: none;
-	}
+	} */
 
 	.clip-circle {
 	  clip-path: circle(80px at center);

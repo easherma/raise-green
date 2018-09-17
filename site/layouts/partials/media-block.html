@@ -1,11 +1,16 @@
-<div class="flex-m mhn3-m mb4">
+<div class="flex-m mhn1-m mb4 bg-warmwhite">
 
-  <div class="ph3-m w-50-m">
-    <img src="{{.imageUrl}}" alt="" class="db mb2">
+  <div class="ph3-m">
+    <img src="{{.image}}" alt="" class="db ma2">
+    <h3 class="f3 b lh-title mb1">{{.name}}</h3>
+    <h3 class="f3 b lh-title mb1">{{.role1}}</h3>
+    <h3 class="f3 b lh-title mb1">{{.role2}}</h3>
   </div>
 
-  <div class="ph3-m w-50-m">
-    <h3 class="f3 b lh-title mb1">{{.heading}}</h3>
+  <div class="ph3-m">
+    {{/* {{ partial "team-card-horizontal" (dict "name" $element.name "role1" $element.role1 "role2" $element.role2 "text" $element.text "image" $element.imageUrl)}} */}}
+
+
     <p>{{.text}}</p>
   </div>
 
