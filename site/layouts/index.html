@@ -1,25 +1,93 @@
 {{ define "main" }}
-<section id="cover">
-<div class="cover bg-left bg-center-l bg-primary white" style="background-image: url()">
-  <div class="mw5 mw7-ns center tc">
-    {{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}
-    {{ partial "newsletter-form" . }}
-  </div>
-</div>
-</section>
-
-
 <section id="navbar" class="z-4 shadow-5">
-{{ partial "nav" . }}
+  {{ partial "nav" . }}
 </section>
+<section id="cover">
+  <div class="cover bg-left bg-center-l bg-primary white" style="background-image:url({{ string .Params.image | relURL }})">
+    <div class="mw5 mw7-ns center tc">
+      {{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }} {{ partial "newsletter-form" . }}
+    </div>
+  </div>
+</section>
+
+
+
 <section id="about">
   {{ partial "short-text" .Params.blurb}}
 
+  <section id="video">
+    <div class="mhn1-l center mw7 mb3">
+
+      <div class="w-100">
+
+        <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/281862263?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+        <script src="https://player.vimeo.com/api/player.js"></script>
+        {{/*
+        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+          <iframe src="//player.vimeo.com/video/281862263" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div> */}}
+      </div>
+    </div>
+  </section>
+
 
 </section>
+
+{{/*
+<section id="goals" class="mhn1-l ph3 center mw7 bg-half-baked br4 card-4">
+  <h2 class="f2 b mb2">Our Goals</h2> {{ partial "4-column" .Params }}
+</section> */}}
+{{/* <section class="bg-warmwhite">
+  {{ partial "short-text" .Params.intro | markdownify }}
+</section> */}}
+
+<section id="mission" class="bg-half-baked">
+  {{ partial "short-text" (dict "heading" .Params.values.heading "text" .Params.values.text "buttonText" "Read more" "buttonLink" "/values") }}
+  </div>
+
+</section>
+</div>
+
+<div class="bg-primary">
+  <section id="team" class="center pt4 pb2 mw7 center ">
+
+    <div class="mhn1-l ph3 cf">
+      <h2 class="f2 b lh-title mb2 white">Our Team</h2> {{ with .Site.GetPage "section" "people" }}
+      <!-- {{ printf "%#v" .Params.people }} -->
+      {{ range $index, $element := .Params.people}}
+      <!-- {{ printf "%#v" $element }} -->
+      <div class="fl w-100 pa1">
+        {{ partial "team-card-horizontal" (dict "name" $element.name "role1" $element.role1 "role2" $element.role2 "text" $element.text "image" $element.imageUrl)}}
+      </div>
+      {{ end }} {{ end }}
+
+    </div>
+  </section>
+</div>
+
+<div class="bg-half-baked">
+  <section id="board" class="center pt4 pb2 mw7 center">
+
+    <div class="mhn1-l ph3 cf">
+      <h2 class="f2 b lh-title mb2 white">Our Board of Advisors</h2> {{ with .Site.GetPage "section" "board" }} {{/* {{ partial "media-block-no-text" (dict "imageUrl" .Params.image )}} */}} {{/* {{ printf "%#v" .Params}} */}} {{ range $index, $element := .Params.people}}
+      <!-- {{ printf "%#v" $element }} -->
+      <div class="fl w-100 pa1">
+        {{ partial "team-card-horizontal" (dict "name" $element.name "role1" $element.role1 "role2" $element.role2 "text" $element.text "image" $element.imageUrl)}}
+      </div>
+      {{ end }} {{ end }}
+
+    </div>
+  </section>
+</div>
+
+
+<section id="blog">
+  {{ partial "blog" . }}
+</section>
+
 <section id="video">
 <div class="mhn1-l center mw7">
-  
+
   <div class="w-100">
 
     <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/281862263?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
@@ -28,21 +96,8 @@
      </div> */}}
   </div>
 </div>
-</section>
-  {{/* <section id="goals" class="mhn1-l ph3 center mw7 bg-half-baked br4 card-4">
-  <h2 class="f2 b mb2">Our Goals</h2>
 
-
-  {{ partial "4-column" .Params  }}
-</section> */}}
-  {{ partial "short-text" .Params.intro | markdownify }}
-
-
-<section id="mission" class="bg-half-baked">
-{{ partial "short-text" (dict "heading" .Params.values.heading "text" .Params.values.text  "buttonText" "Read more" "buttonLink" "/values") }}
-</div>
-
-<div class="bg-saffron">
+  <div class="bg-saffron">
   <section id="contact" class="center cf pt4 pb2 mw8 center">
   <div class="mhn1-l ph3 center mw7">
 
@@ -52,53 +107,9 @@
 
 
   </div>
-      </section>
-</div>
-
-<div class="bg-primary">
-<section id="team" class="center pt4 pb2 mw7 center ">
-
-  <div class="mhn1-l ph3 cf">
-    <h2 class="f2 b lh-title mb2 white">Our Team</h2>
-    {{ with .Site.GetPage "section" "people" }}
-    <!-- {{ printf "%#v" .Params.people }} -->
-    {{ range $index, $element := .Params.people}}
-    <!-- {{ printf "%#v" $element }} -->
-    <div class="fl w-100 w-50-ns pa1">
-    {{ partial "team-card-horizontal" (dict "name" $element.name "role1" $element.role1 "role2" $element.role2 "text" $element.text "image" $element.imageUrl)}}
-  </div>
-    {{ end }}
-    {{ end }}
-
-  </div>
-</section>
-</div>
-
-<div class="bg-half-baked">
-<section id="board" class="center pt4 pb2 mw7 center">
-
-  <div class="mhn1-l ph3 cf">
-    <h2 class="f2 b lh-title mb2 white">Our Board of Advisors</h2>
-    {{ with .Site.GetPage "section" "board" }}
-    {{/* {{ partial "media-block-no-text" (dict "imageUrl" .Params.image )}} */}}
-    {{/* {{ printf "%#v" .Params}} */}}
-    {{ range $index, $element := .Params.people}}
-    <!-- {{ printf "%#v" $element }} -->
-    <div class="fl w-100 w-50-ns pa1">
-    {{ partial "team-card-horizontal" (dict "name" $element.name "role1" $element.role1 "role2" $element.role2 "text" $element.text "image" $element.imageUrl)}}
-  </div>
-    {{ end }}
-    {{ end }}
-
-  </div>
-</section>
-</div>
-
-
-<section id="blog">
-{{ partial "blog" . }}
 </section>
 
 
 
-{{ end }}
+
+  {{ end }}
