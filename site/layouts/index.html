@@ -1,6 +1,8 @@
 {{ define "main" }}
-<section id="navbar" class="z-4 shadow-5">
-  {{ partial "nav" . }}
+<section id="navbar" class="z-4 bg-primary shadow-5">
+  <div class="animated fadeIn d-3 pa2">
+    {{ partial "nav" . }}
+  </div>
 </section>
 <section id="cover">
   <div class="cover bg-left bg-center-l bg-primary white" style="background-image:url({{ string .Params.image | relURL }})">
