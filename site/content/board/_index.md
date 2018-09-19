@@ -2,14 +2,6 @@
 title: Our Advisors
 image: ''
 people:
-  - imageUrl: /img/vincent-s.png
-    name: Vincent Stanley
-    role1: 'Director of Philosophy, Patagonia'
-    role2: 'Chief Storyteller, Patagonia'
-    text: >
-      Vincent Stanley has been with Patagonia on and off since its beginning in
-      1973, for many of those years in key executive roles as head of sales or
-      marketing. 
   - imageUrl: /img/dan-gross.png
     name: Daniel Gross
     role1: Clean Energy Private Equity and Infrastructure Investor
@@ -20,6 +12,14 @@ people:
       Pegasus Capital Advisors and Oaktree Capital Management, and was one of
       the founding Partners of Hudson Clean Energy, a private equity firm with
       over $1 billion in assets under management.
+  - imageUrl: /img/vincent-s.png
+    name: Vincent Stanley
+    role1: 'Director of Philosophy, Patagonia'
+    role2: 'Chief Storyteller, Patagonia'
+    text: >
+      Vincent Stanley has been with Patagonia on and off since its beginning in
+      1973, for many of those years in key executive roles as head of sales or
+      marketing. 
   - imageUrl: /img/andrew-m.png
     name: Andrew McLaughlin
     role1: 'Co-founder / Partner, Higher Ground Labs'
