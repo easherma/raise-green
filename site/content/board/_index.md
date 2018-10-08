@@ -56,8 +56,8 @@ people:
     text: >-
       Michelle has sourced and underwritten equity and debt financings for
       private equity firms and their portfolio companies as an investment banker
-      at UBS from 2012 to 2018 and at RBS from 2005 to 2012. She is is a member
-      partner at Silicon Valley Social Venture Fund where she focuses on impact
-      investing and grantmaking.
+      at UBS from 2012 to 2018 and at RBS from 2005 to 2012. She is a consultant
+      to social enterprises and a member partner at Silicon Valley Social
+      Venture Fund where she focuses on impact investing and grantmaking,
 ---
 
