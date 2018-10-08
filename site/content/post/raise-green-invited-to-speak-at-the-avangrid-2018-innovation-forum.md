@@ -1,5 +1,5 @@
 ---
-title: Raise Green invited to speak at the Avangrid 2018 Innovation Forum
+title: Raise Green speaking at the Avangrid Innovation Forum
 date: '2018-09-21T15:36:08-04:00'
 description: >-
   Raise Green has been invited to speak on the role of startups in transforming
