@@ -50,5 +50,14 @@ people:
       He has divided his time between Yale and MIT, and is focused on finding
       innovative applications for the Blockchain in energy systems, the use of
       open-source platforms, and innovation for societal change.
+  - imageUrl: /img/417_michelle_levy_1__01.jpg
+    name: Michelle Levy
+    role1: 'Member Partner, Silicon Valley Social Venture Fund'
+    text: >-
+      Michelle has sourced and underwritten equity and debt financings for
+      private equity firms and their portfolio companies as an investment banker
+      at UBS from 2012 to 2018 and at RBS from 2005 to 2012. She is is a member
+      partner at Silicon Valley Social Venture Fund where she focuses on impact
+      investing and grantmaking.
 ---
 
