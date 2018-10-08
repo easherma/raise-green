@@ -47,7 +47,7 @@ people:
     name: Dr. Martin Wainstein
     role1: 'Open Innovation Fellow, Yale Tsai City Center for Innovative Thinking'
     text: >
-      He has divided his time between Yale and MIT, and is focused on finding
+      Martin divides his time between Yale and MIT. He is focused on finding
       innovative applications for the Blockchain in energy systems, the use of
       open-source platforms, and innovation for societal change.
   - imageUrl: /img/417_michelle_levy_1__01.jpg
