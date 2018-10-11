@@ -58,6 +58,6 @@ people:
       private equity firms and their portfolio companies as an investment banker
       at UBS from 2012 to 2018 and at RBS from 2005 to 2012. She is a consultant
       to social enterprises and a member partner at Silicon Valley Social
-      Venture Fund where she focuses on impact investing and grantmaking,
+      Venture Fund where she focuses on impact investing and grantmaking.
 ---
 
