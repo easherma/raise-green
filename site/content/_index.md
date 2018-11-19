@@ -1,15 +1,14 @@
 ---
 title: Raise Green
 subtitle: Crowdfunding small investments to democratize renewable energy ownership
-image: 
-
+image: /img/logo_no_text.png
 blurb:
   heading: About
   text: >+
     Raise Green will provide an online portal of financing and support by
     connecting communities with investors interested in putting their money to
-    work protect people and the planet. We will be listing solar projects for
-    low to middle income populations then growing into other projects like
+    work -- protecting people and the planet. We will be listing solar projects
+    for low to middle income populations then growing into other projects like
     electric vehicle infrastructure, diesel generator replacements, and
     microgrids.
 
@@ -38,3 +37,4 @@ values:
     reduce greenhouse emissions, and empower communities to drive change.
     Together we can build and own the decarbonized future we want and need.
 ---
+
