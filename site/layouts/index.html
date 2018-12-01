@@ -7,8 +7,8 @@
 <section id="cover">
   <!-- div class="cover bg-left bg-center-l bg-primary white" style="background-image:url({{ string .Params.image | relURL }})"-->
   <div class="cover bg-left bg-center-l bg-primary white" style="background-color: var(--navy)">
-    <div class="mw5 mw7-ns center"> 
-   {{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }} 
+    <div class="mw5 mw7-ns center" > 
+   {{ partial "jumbotron" (dict "title" .Title "subtitle" .Params.subtitle) }} 
       <div class="pb4 pl3 animated fadeIn d-2">
         {{ partial "newsletter-form" . }}
       </div>
