@@ -5,7 +5,9 @@
   </div>
 </section>
 <section id="cover">
-   <div class="cover bg-left bg-center-l bg-primary white" style="background-image:url({{ string .Params.image | relURL }})">
+  <!-- <div class="cover bg-left bg-center-l bg-primary white" style="background-image:url({{ string .Params.image | relURL }})"> -->
+        <div class="cover bg-left bg-center-l bg-primary white" style="background:rgb(18, 31, 40))">
+
     <div class="mw5 mw7-ns center"> 
     <!-- {{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }} -->
       {{ partial "jumbotron" (.Params.image "title" .Title "subtitle" .Params.subtitle) }}
@@ -63,7 +65,7 @@
       {{ range $index, $element := .Params.people}}
       <!-- {{ printf "%#v" $element }} -->
       <div class="fl w-100 pa1">
-        {{ partial "team-card-horizontal" (dict "name" $element.name "role1" $element.role1 "role2" $element.role2 "text" $element.text "image" $element.imageUrl)}}
+        {{ partial "team-card-horizontal" (dict "name" $element.name "role1" $element.role1 "role2" $element.role2 "text" $element.text "U" $element.imageUrl)}}
       </div>
       {{ end }} {{ end }}
 
