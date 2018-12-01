@@ -1,7 +1,7 @@
 ---
 title: Raise Green
 subtitle: Crowdfunding small investments to democratize renewable energy ownership
-image: /img/logo_no_text.png
+image: /img/logo_no_text.svg
 blurb:
   heading: About
   text: >+
@@ -20,8 +20,7 @@ intro:
     fight climate change, reduce income inequality, and share in the ownership
     of renewable energy projects in their communities and across the country.
 
-projects:
-  - {}
+projects: []
 values:
   heading: Our Mission
   text: >-
